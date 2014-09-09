@@ -1,0 +1,36 @@
+{
+    "name": "fresh/delivery-auto-api-php-client",
+    "description": "PHP client for API of Ukrainian shipping company \"Delivery Auto\".",
+    "keywords": ["delivery", "shipping", "delivery-auto", "Ukraine", "Ukrainian", "api", "client", "web service"],
+    "type": "library",
+    "homepage": "http://www.delivery-auto.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artem Genvald",
+            "email": "genvaldartem@gmail.com",
+            "role": "Creator"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "guzzlehttp/guzzle": "~4.2"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fresh\\DeliveryAuto\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "spec\\Fresh\\DeliveryAuto\\": "spec/"
+        }
+    }
+}
