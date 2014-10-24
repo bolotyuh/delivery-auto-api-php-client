@@ -17,6 +17,7 @@ use Fresh\DeliveryAuto\Mapping\Receipt\Details;
  * API method to get receipt details
  *
  * @author Artem Genvald <genvaldartem@gmail.com>
+ * @author Timur Bolotyuh <timur.bolotyuh@gmail.com>
  */
 class ReceiptDetailsMethod extends AbstractApiMethod
 {
@@ -51,14 +52,23 @@ class ReceiptDetailsMethod extends AbstractApiMethod
         $item = $this->getRawArrayResult();
 
         return (new Details())
-            ->setId($item['id']);
-//            ->setName($item['name'])
-//            ->setAddress($item['address'])
-//            ->setOperatingTime($item['operatingTime'])
-//            ->setPhone($item['Phone'])
-//            ->setEmailStorage($item['EmailStorage'])
-//            ->setLatitude($item['latitude'])
-//            ->setLongitude($item['longitude'])
-//            ->setOffice($item['Office']);
+            ->setId($item['id'])
+            ->setNumber($item['number'])
+            ->setSendDate($item['SendDate'])
+            ->setReceiveDate($item['ReceiveDate'])
+            ->setSenderWarehouseName($item['SenderWarehouseName'])
+            ->setRecepientWarehouseName($item['RecepientWarehouseName'])
+            ->setDiscount($item['Discount'])
+            ->setTotalCost($item['TotalCost'])
+            ->setStatus($item['Status'])
+            ->setWeight($item['Weight'])
+            ->setVolume($item['Volume'])
+            ->setSites($item['Sites'])
+            ->setPaymentStatus($item['PaymentStatus'])
+            ->setCurrency($item['Currency'])
+            ->setInsuranceCost($item['InsuranceCost'])
+            ->setInsuranceCurrency($item['InsuranceCurrency'])
+            ->setPushStateCode($item['PushStateCode'])
+        ;
     }
 }
