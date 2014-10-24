@@ -1,21 +1,15 @@
 <?php
-/*
- * This file is part of the "Delivery Auto" API PHP Client
- *
- * (c) Artem Genvald <genvaldartem@gmail.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
 
 namespace spec\Fresh\DeliveryAuto\Directory;
 
 use PhpSpec\ObjectBehavior;
+use Prophecy\Argument;
 
 /**
  * LocaleSpec
  *
  * @author Artem Genvald <genvaldartem@gmail.com>
+ * @author Timur Bolotyuh <timur.bolotyuh@gmail.com>
  */
 class LocaleSpec extends ObjectBehavior
 {
@@ -23,4 +17,7 @@ class LocaleSpec extends ObjectBehavior
     {
         $this->shouldHaveType('Fresh\DeliveryAuto\Directory\Locale');
     }
+
 }
+
+
