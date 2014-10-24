@@ -10,6 +10,11 @@
             "name": "Artem Genvald",
             "email": "genvaldartem@gmail.com",
             "role": "Creator"
+        },
+        {
+            "name": "Timur Bolotyuh",
+            "email": "timur.bolotyuh@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -18,7 +23,9 @@
         "guzzlehttp/guzzle": "~4.2"
     },
     "require-dev": {
-        "phpspec/phpspec": "~2.0"
+        "phpspec/phpspec": "~2.0",
+        "henrikbjorn/phpspec-code-coverage": "~0.2",
+        "phpunit/phpunit": "3.7.9"
     },
     "config": {
         "bin-dir": "bin"
@@ -26,11 +33,6 @@
     "autoload": {
         "psr-4": {
             "Fresh\\DeliveryAuto\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "spec\\Fresh\\DeliveryAuto\\": "spec/"
         }
     }
 }
